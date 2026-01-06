@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Travel Recommendation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./travel_recommendation.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">
+            <h1>TravelBetter</h1>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="./travel_recommendation.html">Home</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+
+        <div class="nav-search">
+            <input 
+                type="text" 
+                id="conditionInput" 
+                placeholder="Enter a destination or keyword"
+            >
+            <button id="btnSearch">Search</button>
+            <button id="btnReset">Reset</button>
+        </div>
+    </nav>
+
+    <!-- HOME PAGE CONTENT -->
+  <section class="hero">
+    <div class="hero-overlay">
+        <div class="hero-content">
+
+            <div class="hero-left">
+                <h1>Explore Dream Destinations</h1>
+            </div>
+
+            <div class="hero-box hero-right">
+                <p>Discover the world’s most beautiful places</p>
+                <button class="book-btn">Book Now</button>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+    <!-- RECOMMENDATION RESULTS (EMPTY FOR NOW) -->
+    <div id="recommendations"></div>
+
+    <script src="./travel_recommendation.js"></script>
+</body>
+</html>

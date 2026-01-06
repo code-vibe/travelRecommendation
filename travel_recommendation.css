@@ -1,0 +1,362 @@
+/* ============================= */
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ============================= */
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 15px 30px;
+}
+
+.logo h1 {
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* SEARCH AREA */
+.nav-search {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.nav-search input {
+    padding: 6px 10px;
+    border: none;
+    outline: none;
+    background-color: white;
+}
+
+.nav-search button {
+    padding: 6px 14px;
+    border: none;
+    cursor: pointer;
+    background-color: lightgreen;
+    font-weight: bold;
+}
+
+/* ============================= */
+/* HERO SECTION (Home & About) */
+.hero {
+    height: 100vh;
+    background-image: url("./travel_image.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Home Page Hero Content */
+.hero-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 1100px;
+    width: 100%;
+    padding: 0 40px;
+    color: white;
+}
+
+
+
+/*.hero-box {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 35px;
+    border-radius: 12px;
+    max-width: 480px;
+}*/
+
+.hero-left {
+    flex: 1;
+    text-align: left;
+}
+
+.hero-left h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 100px;
+    font-weight: 600;
+    font-style: italic;
+    line-height: 1.15;
+}
+
+
+.hero-right {
+    flex: 1;
+    text-align: right;
+}
+
+.hero-right p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+
+.hero-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero-subtitle {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.book-btn {
+    padding: 12px 30px;
+    background-color: lightgreen;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.book-btn:hover {
+    opacity: 0.9;
+}
+
+
+/* ============================= */
+/* RECOMMENDATIONS GRID */
+/*#recommendations {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    justify-items: center;
+}*/
+
+#recommendations {
+    background-image: url("./travel_image.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#recommendations::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+#recommendations > * {
+    position: relative;
+}
+
+.recommendation-card {
+    background-color: rgba(255,255,255,0.1);
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.recommendation-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+.recommendation-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.recommendation-card h3 {
+    margin-bottom: 8px;
+}
+
+.recommendation-card p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* ============================= */
+/* ABOUT PAGE */
+.about-container {
+    min-height: 100vh;
+    background-image: url("./travel_image.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.about-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    min-height: 100%;
+    width: 100%;
+    padding: 60px 80px;
+    color: white;
+}
+
+/* ABOUT HEADER */
+.about-header {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* COMPANY DESCRIPTION */
+.about-description {
+    max-width: 900px;
+    margin: 0 auto 60px auto;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.about-description p {
+    margin-bottom: 20px;
+}
+
+/* TEAM SECTION (all in one box) */
+.team-section {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.team-section h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+/* TEAM CARDS */
+.team-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.team-card {
+    width: 250px;
+    text-align: center;
+    color: white;
+}
+
+.team-card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.team-card h3 {
+    margin-bottom: 8px;
+}
+
+/* ROLE TAG */
+.role-tag {
+    display: inline-block;
+    background-color: #1e90ff;
+    color: white;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.team-card p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* ============================= */
+/* CONTACT PAGE FORM */
+.contact-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: #f7f7f7;
+}
+
+.contact-form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: lightgreen;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    opacity: 0.9;
+}
