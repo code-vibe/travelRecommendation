@@ -63,7 +63,7 @@
 /* HERO SECTION (Home & About) */
 .hero {
     height: 100vh;
-    background-image: url("./travel_image.jpg");
+    background-image: url("travel_image.jpg");
     background-size: cover;
     background-position: center;
     position: relative;
@@ -162,7 +162,7 @@
 }*/
 
 #recommendations {
-    background-image: url("./travel_image.jpg");
+    background-image: url("travel_image.jpg");
     background-size: cover;
     background-position: center;
     position: relative;
@@ -217,7 +217,7 @@
 /* ABOUT PAGE */
 .about-container {
     min-height: 100vh;
-    background-image: url("./travel_image.jpg");
+    background-image: url("travel_image.jpg");
     background-size: cover;
     background-position: center;
     position: relative;
